@@ -1,0 +1,19 @@
+  
+
+<%AllSanPham.forEach(SanPham => {%>
+    <h1>
+    
+    <p>ma san pham : <%= SanPham.masanpham%></p>    
+    </h1>
+    <p> ten san pham : 
+        <%=SanPham.ten %>
+    </p>
+    <p>
+        So luong : 
+        <%= SanPham.sl %>
+    </p>
+   
+    <a href="/delete/<%=SanPham.masanpham %>" type="button">Delete</a>
+   
+    <%}); %>
+
